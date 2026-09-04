@@ -20,7 +20,7 @@ const benefits = [
   { icon: Music2, label: 'Nhạc cụ được chuẩn bị sẵn' },
   { icon: CircleCheck, label: 'Báo cáo học tập sau từng buổi' },
   { icon: BookOpen, label: 'Giáo trình bài bản' },
-  { icon: Sparkles, label: 'Cơ hội biểu diễn tại DẤU LẶNG' },
+  { icon: Sparkles, label: 'Cơ hội biểu diễn tại Jody Music' },
 ]
 
 const packages = [12, 24, 48, 96]
@@ -43,7 +43,7 @@ export function TrainingCourseCard({ course, index }: { course: Course; index: n
           <img
             className="image-cover"
             src={course.image}
-            alt={`Học viên lớp ${course.name} tại DẤU LẶNG`}
+            alt={`Học viên lớp ${course.name} tại Jody Music`}
             loading={index > 1 ? 'lazy' : undefined}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink/20 via-transparent to-white/5" aria-hidden="true" />

@@ -7,7 +7,7 @@ export const testimonials: Testimonial[] = [
 ]
 
 export const faqs: FAQ[] = [
-  { question: 'Tôi chưa biết gì về âm nhạc có học được không?', answer: 'Hoàn toàn được. Hơn 70% học viên mới tại DẤU LẶNG bắt đầu từ con số 0. Buổi đánh giá đầu vào giúp giáo viên xây lộ trình đúng với mục tiêu và tốc độ của bạn.' },
+  { question: 'Tôi chưa biết gì về âm nhạc có học được không?', answer: 'Hoàn toàn được. Hơn 70% học viên mới tại Jody Music bắt đầu từ con số 0. Buổi đánh giá đầu vào giúp giáo viên xây lộ trình đúng với mục tiêu và tốc độ của bạn.' },
   { question: 'Trung tâm có lớp cho trẻ em không?', answer: 'Có. Chương trình dành cho trẻ từ 5 tuổi, sử dụng hoạt động cảm âm, vận động và repertoire phù hợp từng giai đoạn phát triển.' },
   { question: 'Có lớp cho người lớn không?', answer: 'Có. Lịch học linh hoạt buổi tối và cuối tuần, mục tiêu có thể là thư giãn, đệm hát, biểu diễn hoặc thi chứng chỉ.' },
   { question: 'Một khóa học bao nhiêu buổi?', answer: 'Gói khởi đầu gồm 12 buổi. Học viên có thể chọn lộ trình 24, 48 hoặc 96 buổi để nhận mức học phí tốt hơn và theo đuổi mục tiêu dài hạn.' },

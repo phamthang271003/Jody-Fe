@@ -29,6 +29,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 img { display: block; }
 ::selection { background: #f4b942; color: #10182f; }
 
+.logo-on-light {
+  filter: brightness(0) saturate(100%) invert(8%) sepia(24%) saturate(1950%) hue-rotate(190deg) brightness(92%) contrast(98%);
+}
+
 .container-site { width: min(100% - 2rem, 82rem); margin-inline: auto; }
 @media (min-width: 768px) { .container-site { width: min(100% - 4rem, 82rem); } }
 .section-pad { padding-block: clamp(4rem, calc(3rem + 4.5vw), 7rem); }

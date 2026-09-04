@@ -1,4 +1,4 @@
-# DẤU LẶNG Music Academy
+# Jody Music
 
 Frontend production-ready cho trung tâm âm nhạc tại Việt Nam, xây dựng với React 19, TypeScript, Vite, Tailwind CSS 4 và React Router.
 

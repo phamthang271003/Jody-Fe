@@ -45,11 +45,11 @@ export function HomeHero() {
           >
             Khám phá<br />
             tiềm năng âm nhạc<br />
-            cùng <span className="bg-gradient-to-r from-primary-hover via-primary to-accent bg-clip-text text-transparent">DẤU LẶNG</span>
+            cùng <span className="bg-gradient-to-r from-primary-hover via-primary to-accent bg-clip-text text-transparent">JODY MUSIC</span>
           </h1>
 
           <p className="animate-enter mt-7 max-w-[39rem] text-sm leading-7 text-muted sm:text-base sm:leading-8" style={{ animationDelay: '.2s' }}>
-            Mỗi học viên đều có một thanh âm riêng. Với phương pháp cá nhân hóa, đội ngũ tận tâm và môi trường truyền cảm hứng, DẤU LẶNG giúp bạn tự tin thể hiện và bứt phá giới hạn của chính mình.
+            Mỗi học viên đều có một thanh âm riêng. Với phương pháp cá nhân hóa, đội ngũ tận tâm và môi trường truyền cảm hứng, Jody Music giúp bạn tự tin thể hiện và bứt phá giới hạn của chính mình.
           </p>
 
           <div className="animate-enter mt-8 flex flex-col gap-3 sm:flex-row" style={{ animationDelay: '.28s' }}>
@@ -81,7 +81,7 @@ export function HomeHero() {
           </div>
         </div>
 
-        <div className="animate-enter relative mx-auto aspect-[.96/1] w-full max-w-[46rem] sm:aspect-[1.14/1] lg:aspect-[1.02/1] lg:max-w-none" style={{ animationDelay: '.17s' }} aria-label="Khoảnh khắc học tập và biểu diễn tại DẤU LẶNG">
+        <div className="animate-enter relative mx-auto aspect-[.96/1] w-full max-w-[46rem] sm:aspect-[1.14/1] lg:aspect-[1.02/1] lg:max-w-none" style={{ animationDelay: '.17s' }} aria-label="Khoảnh khắc học tập và biểu diễn tại Jody Music">
           <div className="pointer-events-none absolute left-[2%] top-[9%] h-[78%] w-[73%] -rotate-[5deg] rounded-[2.2rem] border border-iris/20 sm:rounded-[3rem]" aria-hidden="true" />
 
           <div className="group absolute left-[2%] top-[11%] h-[76%] w-[71%] -rotate-[1.5deg] overflow-hidden rounded-[1.55rem] border-[4px] border-white bg-ink shadow-[0_28px_70px_rgba(16,24,47,.2)] sm:rounded-[2.25rem] sm:border-[6px]">

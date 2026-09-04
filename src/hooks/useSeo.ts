@@ -4,7 +4,7 @@ interface SeoOptions { title: string; description: string; image?: string }
 
 export function useSeo({ title, description, image }: SeoOptions) {
   useEffect(() => {
-    document.title = `${title} | DẤU LẶNG Music Academy`
+    document.title = `${title} | Jody Music`
     const canonical = `${window.location.origin}${window.location.pathname}`
     const entries: Array<[string, string, string]> = [
       ['name', 'description', description], ['property', 'og:title', title],

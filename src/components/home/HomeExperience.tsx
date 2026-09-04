@@ -45,8 +45,8 @@ export function WhyUsSection() {
     <div className="container-site relative max-w-[92rem]">
       <header className="mx-auto mb-10 max-w-5xl text-center sm:mb-14">
         <span className="mx-auto mb-4 block h-2 w-16 rounded-full bg-tangerine" aria-hidden="true" />
-        <p className="eyebrow text-ink/50">Dấu Lặng Music Center</p>
-        <h2 className="text-balance mt-4 text-[clamp(2.15rem,4.5vw,4rem)] font-bold leading-[1.25] tracking-[-.03em] text-ink">Vì sao chọn học âm nhạc bài bản tại <span className="relative text-iris">DẤU LẶNG?<span className="absolute -bottom-2 left-1/2 h-1 w-20 -translate-x-1/2 -rotate-3 rounded-full bg-tangerine" aria-hidden="true" /></span></h2>
+        <p className="eyebrow text-ink/50">Jody Music</p>
+        <h2 className="text-balance mt-4 text-[clamp(2.15rem,4.5vw,4rem)] font-bold leading-[1.25] tracking-[-.03em] text-ink">Vì sao chọn học âm nhạc bài bản tại <span className="relative text-iris">Jody Music?<span className="absolute -bottom-2 left-1/2 h-1 w-20 -translate-x-1/2 -rotate-3 rounded-full bg-tangerine" aria-hidden="true" /></span></h2>
         <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-ink/55 sm:text-base">Chúng tôi đồng hành cùng học viên trên hành trình chinh phục âm nhạc bằng phương pháp hiện đại và sự tận tâm.</p>
       </header>
 

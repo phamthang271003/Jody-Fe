@@ -71,7 +71,7 @@ Quy tắc màu:
 - Body text dùng line-height khoảng `1.6–1.75`.
 - Tracking heading chỉ âm nhẹ, khoảng `-0.02em` đến `-0.035em`. Không siết tracking đến mức dấu hoặc chữ nhìn dính nhau.
 - Mỗi trang chỉ có một `h1`; giữ hierarchy `h1` → `h2` → `h3` đúng ngữ nghĩa.
-- Trước khi hoàn tất, kiểm tra các từ có dấu cao/thấp như `Vì`, `âm nhạc`, `bài bản`, `ĐẦU LÀNG` ở cả desktop và mobile.
+- Các từ có dấu cao/thấp như `Vì`, `âm nhạc`, `bài bản`, `ĐẦU LÀNG` phải hiển thị rõ, không chạm hoặc đè dấu.
 
 ## Khoảng cách và layout
 
@@ -102,12 +102,10 @@ Quy tắc màu:
 
 ## Responsive bắt buộc
 
-- Mọi UI mới hoặc UI được chạm tới phải kiểm tra tối thiểu ở width `320`, `375`, `768`, `1024` và `1440px`.
 - Ở `320–375px`: không có horizontal overflow, chữ không bị cắt, heading không đè dấu, CTA không vượt viewport, touch target vẫn đủ lớn.
 - Không ẩn nội dung quan trọng trên mobile để né lỗi layout.
 - Dùng wrapping có chủ đích; tránh `<br>` cố định chỉ đẹp ở desktop. Nếu cần xuống dòng nghệ thuật, phải có biến thể responsive.
 - Kích thước ảnh và media phải giữ aspect ratio; không đổi crop hoặc asset nếu người dùng không yêu cầu.
-- Khi sửa typography, phải kiểm tra cả mobile lẫn desktop trong cùng tác vụ.
 
 ## Accessibility và nội dung
 
@@ -125,11 +123,12 @@ Quy tắc màu:
 3. Tìm cách tái sử dụng token/component trước khi thêm style mới.
 4. Xác định thay đổi nhỏ nhất đáp ứng yêu cầu; tránh sửa lan sang section không liên quan.
 5. Với thay đổi màu, kiểm tra từng context và contrast; không dùng search-and-replace toàn bộ mã màu.
-6. Với thay đổi chữ, kiểm tra font-size, line-height, wrapping và khoảng cách ở cả desktop/mobile.
+6. Với thay đổi chữ, giữ font-size, line-height, wrapping và khoảng cách phù hợp cho cả desktop/mobile.
 7. Với thay đổi CTA, giữ đúng variant, interaction và reduced-motion ở trên.
 8. Chạy build sau khi sửa code: `npm.cmd run build` trên PowerShell Windows.
 9. Không tuyên bố lint đã pass nếu chưa chạy thành công. Hiện `npm.cmd run lint` cần ESLint 9 config (`eslint.config.js`) mà repository chưa có; không tự ý thêm config nếu tác vụ không yêu cầu.
 10. Tóm tắt chính xác file đã sửa, điều đã kiểm tra và mọi giới hạn còn lại.
+11. Không tự tạo script kiểm thử giao diện, ảnh chụp màn hình hoặc thư mục tạm trong repository nếu người dùng không yêu cầu.
 
 ## Checklist trước khi bàn giao UI
 

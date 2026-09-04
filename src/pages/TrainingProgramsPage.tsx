@@ -8,7 +8,7 @@ export default function TrainingProgramsPage() {
 
   useSeo({
     title: 'Chương trình đào tạo',
-    description: 'Khám phá các chương trình học âm nhạc tại DẤU LẶNG dành cho nhiều độ tuổi và trình độ.',
+    description: 'Khám phá các chương trình học âm nhạc tại Jody Music dành cho nhiều độ tuổi và trình độ.',
   })
 
   return <>

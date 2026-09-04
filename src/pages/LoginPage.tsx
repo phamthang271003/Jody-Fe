@@ -7,7 +7,7 @@ import { useSeo } from '../hooks/useSeo'
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false)
   const [submitted, setSubmitted] = useState(false)
-  useSeo({ title: 'Đăng nhập học viên', description: 'Đăng nhập cổng học viên DẤU LẶNG Music Academy.' })
+  useSeo({ title: 'Đăng nhập học viên', description: 'Đăng nhập cổng học viên Jody Music.' })
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()

@@ -12,7 +12,7 @@ const contactItems = [
     href: directionsUrl,
   },
   { icon: Phone, label: 'Hotline', content: '(028) 7300 8886', href: 'tel:02873008886' },
-  { icon: Mail, label: 'Email liên hệ', content: 'hello@daulang.edu.vn', href: 'mailto:hello@daulang.edu.vn' },
+  { icon: Mail, label: 'Email liên hệ', content: 'hello@jodymusic.vn', href: 'mailto:hello@jodymusic.vn' },
 ]
 
 export function CampusContactSection() {
@@ -33,7 +33,7 @@ export function CampusContactSection() {
               <MapPin size={15} />Liên hệ
             </span>
             <h2 id="campus-title" className="mt-7 max-w-xl text-[clamp(2rem,4vw,3.25rem)] font-bold leading-[1.15] tracking-[-.03em] text-ink">
-              Cơ sở DẤU LẶNG<br />TP. Hồ Chí Minh
+              Cơ sở Jody Music<br />TP. Hồ Chí Minh
             </h2>
             <p className="mt-3 text-lg font-semibold text-tangerine sm:text-xl">Music Academy & Creative Studio</p>
             <span className="mt-5 block h-0.5 w-12 bg-tangerine" aria-hidden="true" />
@@ -63,7 +63,7 @@ export function CampusContactSection() {
 
         <div className="relative min-h-[25rem] overflow-hidden rounded-[1.75rem] bg-ink shadow-[0_18px_55px_rgba(16,24,47,.14)] sm:min-h-[32rem] lg:min-h-full">
           <iframe
-            title="Bản đồ cơ sở DẤU LẶNG Music Academy"
+            title="Bản đồ cơ sở Jody Music"
             src={mapUrl}
             className="absolute inset-0 h-full w-full border-0 opacity-90 [filter:grayscale(.4)_invert(.88)_hue-rotate(180deg)_brightness(.68)_contrast(1.2)]"
             loading="lazy"

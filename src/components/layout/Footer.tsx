@@ -50,13 +50,13 @@ const columns = [
     ],
   },
   {
-    title: 'DẤU LẶNG',
+    title: 'Jody Music',
     links: [
       ['Giới thiệu', '/about'],
       ['Đội ngũ giáo viên', '/teachers'],
       ['Thành quả học viên', '/students'],
       ['Hoạt động & sự kiện', '/events'],
-      ['DẤU LẶNG Journal', '/blog'],
+      ['Jody Music Journal', '/blog'],
       ['Tuyển dụng', '/contact'],
     ],
   },
@@ -125,7 +125,7 @@ export function Footer() {
           <address className="space-y-5 text-xs not-italic leading-6 text-white/62">
             <p className="flex items-start gap-3"><MapPin size={17} className="mt-1 shrink-0 text-white/80" />32A Trần Quốc Thảo,<br />P. Xuân Hòa, TP.HCM</p>
             <a href="tel:02873008886" className="focus-ring flex items-center gap-3 transition hover:text-tangerine"><Phone size={17} className="shrink-0 text-white/80" />(028) 7300 8886</a>
-            <a href="mailto:hello@daulang.edu.vn" className="focus-ring flex items-center gap-3 transition hover:text-tangerine"><Mail size={17} className="shrink-0 text-white/80" />hello@daulang.edu.vn</a>
+            <a href="mailto:hello@jodymusic.vn" className="focus-ring flex items-center gap-3 transition hover:text-tangerine"><Mail size={17} className="shrink-0 text-white/80" />hello@jodymusic.vn</a>
             <p className="flex items-start gap-3"><Clock3 size={17} className="mt-1 shrink-0 text-white/80" />08:00–21:30<br />Thứ 2–Chủ nhật</p>
           </address>
         </div>
@@ -135,7 +135,7 @@ export function Footer() {
           <address className="mt-5 grid gap-4 text-[.72rem] not-italic leading-5 text-white/62">
             <p className="flex items-start gap-3"><MapPin size={17} className="mt-0.5 shrink-0 text-tangerine" />32A Trần Quốc Thảo,<br />P. Xuân Hòa, TP.HCM</p>
             <a href="tel:02873008886" className="focus-ring flex items-center gap-3"><Phone size={17} className="shrink-0 text-tangerine" />(028) 7300 8886</a>
-            <a href="mailto:hello@daulang.edu.vn" className="focus-ring flex items-center gap-3 break-all"><Mail size={17} className="shrink-0 text-tangerine" />hello@daulang.edu.vn</a>
+            <a href="mailto:hello@jodymusic.vn" className="focus-ring flex items-center gap-3 break-all"><Mail size={17} className="shrink-0 text-tangerine" />hello@jodymusic.vn</a>
             <p className="flex items-start gap-3"><Clock3 size={17} className="mt-0.5 shrink-0 text-tangerine" />08:00–21:30 · Thứ 2–Chủ nhật</p>
           </address>
         </div>
@@ -154,7 +154,7 @@ export function Footer() {
 
     <div className="border-t border-white/10">
       <div className={`${footerContainer} flex flex-col gap-5 py-6 text-[.65rem] text-white/42 md:flex-row md:items-center md:justify-between`}>
-        <p>© 2026 DẤU LẶNG Music Academy. All rights reserved.</p>
+        <p>© 2026 Jody Music. All rights reserved.</p>
         <div className="grid w-full grid-cols-2 items-center gap-x-4 gap-y-4 md:flex md:w-auto md:flex-wrap md:gap-x-7 md:gap-y-3">
           <Link to="/pricing" className="focus-ring transition hover:text-white">Quy định tính buổi học</Link>
           <Link to="/privacy-policy" className="focus-ring transition hover:text-white">Chính sách bảo mật</Link>

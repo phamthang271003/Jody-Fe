@@ -12,12 +12,12 @@ export default function InstrumentsPage() {
 
   useSeo({
     title: selectedCategory ? selectedCategory.label : 'Nhạc cụ',
-    description: 'Danh mục nhạc cụ tuyển chọn dành cho học tập, luyện tập và biểu diễn tại DẤU LẶNG.',
+    description: 'Danh mục nhạc cụ tuyển chọn dành cho học tập, luyện tập và biểu diễn tại Jody Music.',
   })
 
   return <>
     <PageHero
-      eyebrow="DẤU LẶNG Music Store"
+      eyebrow="Jody Music Store"
       title={pageTitle}
       description="Danh mục sản phẩm đang được hoàn thiện để mang đến những lựa chọn phù hợp cho từng nhu cầu học tập và biểu diễn."
     />
@@ -33,7 +33,7 @@ export default function InstrumentsPage() {
           <h2 className="text-balance mx-auto mt-5 max-w-2xl text-[clamp(2.25rem,5vw,3.5rem)] font-bold leading-[1.18] tracking-[-0.03em] text-ink">
             Sản phẩm phù hợp sẽ sớm được giới thiệu.
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-muted sm:text-base sm:leading-8">Liên hệ đội ngũ DẤU LẶNG nếu bạn cần tư vấn chọn nhạc cụ ngay hôm nay.</p>
+          <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-muted sm:text-base sm:leading-8">Liên hệ đội ngũ Jody Music nếu bạn cần tư vấn chọn nhạc cụ ngay hôm nay.</p>
           <ButtonLink to="/contact" arrow className="mt-7">Nhận tư vấn nhạc cụ</ButtonLink>
         </div>
       </div>

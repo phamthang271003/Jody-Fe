@@ -29,7 +29,7 @@ export function TrainingProgramsSection({ page = false }: { page?: boolean }) {
             Chương Trình <span className="text-primary-hover">Đào Tạo</span>
           </Heading>
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-muted sm:text-base sm:leading-8">
-            Khám phá các khóa học âm nhạc đa dạng tại DẤU LẶNG
+            Khám phá các khóa học âm nhạc đa dạng tại Jody Music
           </p>
         </header>
 

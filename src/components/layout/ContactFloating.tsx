@@ -3,21 +3,21 @@ import { MessageCircleMore, PhoneCall } from 'lucide-react'
 const actions = [
   {
     label: 'Hotline',
-    ariaLabel: 'Gọi hotline DẤU LẶNG',
+    ariaLabel: 'Gọi hotline Jody Music',
     href: 'tel:02873008886',
     className: 'from-accent via-accent to-accent text-ink shadow-[0_8px_20px_rgba(233,134,74,.24)]',
     icon: 'phone',
   },
   {
     label: 'Messenger',
-    ariaLabel: 'Chat với DẤU LẶNG qua Messenger',
+    ariaLabel: 'Chat với Jody Music qua Messenger',
     href: 'https://m.me',
     className: 'from-primary via-primary to-primary-hover text-ink shadow-[0_8px_20px_rgba(217,151,24,.22)]',
     icon: 'messenger',
   },
   {
     label: 'Zalo',
-    ariaLabel: 'Chat với DẤU LẶNG qua Zalo',
+    ariaLabel: 'Chat với Jody Music qua Zalo',
     href: 'https://zalo.me',
     className: 'from-[#28b2ff] via-[#1688f5] to-[#0864ec] text-white shadow-[0_8px_20px_rgba(8,100,236,.24)]',
     icon: 'zalo',

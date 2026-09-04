@@ -26,7 +26,7 @@ export function AnnualShowcaseSection() {
             <div className="mb-5 h-1 w-12 rounded-full bg-tangerine sm:mb-6" aria-hidden="true" />
             <p className="eyebrow text-tangerine">Trình diễn trước khán giả</p>
             <h2 className="display text-balance mt-4 text-[clamp(2.25rem,3.8vw,3.75rem)] text-ink">
-              Sân khấu thường niên của DẤU LẶNG.
+              Sân khấu thường niên của Jody Music.
             </h2>
             <p className="mt-5 text-sm font-semibold uppercase leading-6 tracking-[.07em] text-ink/75 sm:text-base">
               {featuredEvent.title} — một cột mốc đáng nhớ
@@ -45,7 +45,7 @@ export function AnnualShowcaseSection() {
               className="button-motion focus-ring group mt-7 inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-full bg-ink px-5 text-center text-xs font-bold uppercase tracking-[.04em] text-white hover:bg-primary hover:text-ink sm:w-auto sm:px-6"
             >
               <CalendarDays size={17} aria-hidden="true" />
-              Xem các sự kiện của DẤU LẶNG
+              Xem các sự kiện của Jody Music
               <ArrowRight size={17} className="button-arrow" aria-hidden="true" />
             </Link>
         </div>

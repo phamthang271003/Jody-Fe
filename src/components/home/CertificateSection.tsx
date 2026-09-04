@@ -33,7 +33,7 @@ export function CertificateSection() {
               <div className="relative flex h-full flex-col items-center justify-between">
                 <div>
                   <span className="mx-auto grid size-8 place-items-center rounded-full border border-ink/20 text-ink sm:size-12"><Award className="size-4 sm:size-6" /></span>
-                  <p className="mt-2 text-[.42rem] font-bold uppercase tracking-[.18em] text-ink/60 sm:mt-3 sm:text-[.62rem]">Dấu Lặng Music Academy</p>
+                  <p className="mt-2 text-[.42rem] font-bold uppercase tracking-[.18em] text-ink/60 sm:mt-3 sm:text-[.62rem]">Jody Music</p>
                 </div>
                 <div>
                   <p className="text-[.52rem] font-semibold uppercase tracking-[.16em] text-ink/45 sm:text-xs">Trân trọng trao</p>
@@ -43,8 +43,8 @@ export function CertificateSection() {
                   <p className="text-[.55rem] font-bold text-ink sm:text-sm">Piano Foundation · 24 buổi</p>
                 </div>
                 <div className="flex w-full items-end justify-between gap-4 text-[.4rem] text-ink/45 sm:text-[.58rem]">
-                  <div className="text-left"><p>Mã chứng nhận</p><b className="text-ink/70">DL-2026-0042</b></div>
-                  <div className="text-right"><p className="font-display text-sm italic text-ink sm:text-xl">Dấu Lặng</p><span className="mt-0.5 block border-t border-ink/25 pt-1">Giám đốc học thuật</span></div>
+                  <div className="text-left"><p>Mã chứng nhận</p><b className="text-ink/70">JM-2026-0042</b></div>
+                  <div className="text-right"><p className="font-display text-sm italic text-ink sm:text-xl">Jody Music</p><span className="mt-0.5 block border-t border-ink/25 pt-1">Giám đốc học thuật</span></div>
                 </div>
               </div>
             </div>
@@ -53,9 +53,9 @@ export function CertificateSection() {
 
         <div className="order-1 lg:order-2">
           <div className="flex items-center gap-4 text-iris"><span className="h-px w-12 bg-iris/50" /><p className="eyebrow">Chứng nhận hoàn thành</p><span className="h-px w-12 bg-iris/50" /></div>
-          <h2 id="certificate-title" className="mt-7 text-[clamp(2.5rem,5vw,4.4rem)] font-bold leading-[1.14] tracking-[-.03em] text-ink">DẤU LẶNG<br /><span className="text-iris">Certificate</span></h2>
+          <h2 id="certificate-title" className="mt-7 text-[clamp(2.5rem,5vw,4.4rem)] font-bold leading-[1.14] tracking-[-.03em] text-ink">Jody Music<br /><span className="text-iris">Certificate</span></h2>
           <span className="mt-7 block h-1 w-16 rounded-full bg-tangerine" aria-hidden="true" />
-          <p className="mt-7 max-w-xl text-sm leading-7 text-ink/65 sm:text-base sm:leading-8">Tại DẤU LẶNG, mỗi hành trình học nhạc đều được ghi nhận và trân trọng. Sau khi hoàn thành lộ trình từ 24 buổi, học viên sẽ được cấp <strong className="font-semibold text-iris">Chứng nhận Hoàn thành Khóa học</strong> như một dấu mốc cho nỗ lực và sự tiến bộ.</p>
+          <p className="mt-7 max-w-xl text-sm leading-7 text-ink/65 sm:text-base sm:leading-8">Tại Jody Music, mỗi hành trình học nhạc đều được ghi nhận và trân trọng. Sau khi hoàn thành lộ trình từ 24 buổi, học viên sẽ được cấp <strong className="font-semibold text-iris">Chứng nhận Hoàn thành Khóa học</strong> như một dấu mốc cho nỗ lực và sự tiến bộ.</p>
 
           <div className="mt-8 border-t border-ink/10">
             {certificateBenefits.map((benefit) => <div key={benefit.title} className="grid grid-cols-[1.5rem_1fr] gap-3 border-b border-ink/10 py-5">

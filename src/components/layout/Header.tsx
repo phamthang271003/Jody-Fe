@@ -34,6 +34,10 @@ const links = [
   { label: 'Liên hệ', to: '/contact' },
 ]
 
+// Chỉ ẩn khỏi điều hướng; route và nội dung trang vẫn được giữ nguyên để sử dụng lại.
+const hiddenMainNavPaths = new Set(['/teachers', '/pricing', '/about'])
+const visibleLinks = links.filter((link) => !hiddenMainNavPaths.has(link.to))
+
 const headerContainer = 'mx-auto w-[min(calc(100%-2rem),90rem)] md:w-[min(calc(100%-4rem),90rem)]'
 
 export function Header() {
@@ -61,7 +65,7 @@ export function Header() {
           <div className="flex min-w-0 items-center gap-5">
             <a href="https://maps.google.com" target="_blank" rel="noreferrer" className="focus-ring hidden items-center gap-2 transition hover:text-tangerine lg:flex"><MapPin size={13} className="text-tangerine" />32A Trần Quốc Thảo, TP.HCM</a>
             <a href="tel:02873008886" className="focus-ring flex shrink-0 items-center gap-2 transition hover:text-tangerine"><Phone size={13} className="text-tangerine" />(028) 7300 8886</a>
-            <a href="mailto:hello@daulang.edu.vn" className="focus-ring hidden items-center gap-2 transition hover:text-tangerine md:flex"><Mail size={13} className="text-tangerine" />hello@daulang.edu.vn</a>
+            <a href="mailto:hello@jodymusic.vn" className="focus-ring hidden items-center gap-2 transition hover:text-tangerine md:flex"><Mail size={13} className="text-tangerine" />hello@jodymusic.vn</a>
           </div>
           <div className="flex shrink-0 items-center gap-3">
             <span className="flex items-center gap-2"><Clock3 size={13} className="text-tangerine" /><span className="hidden sm:inline">08:00–21:30 · </span>Thứ 2–CN</span>
@@ -81,7 +85,7 @@ export function Header() {
           <Logo large={!scrolled} />
 
           <nav className="hidden h-full items-center gap-4 xl:flex 2xl:gap-6" aria-label="Điều hướng chính">
-            {links.map((link) => <div key={link.to} className="group/nav relative flex h-full items-center">
+            {visibleLinks.map((link) => <div key={link.to} className="group/nav relative flex h-full items-center">
               <NavLink to={link.to} className={({ isActive }) => {
                 const menuActive = (link.menu === 'programs' && pathname.startsWith('/programs')) || (link.menu === 'instruments' && pathname.startsWith('/instruments'))
                 return `focus-ring relative flex h-full items-center gap-1 py-2 text-[.76rem] font-semibold transition-colors after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:origin-center after:bg-primary after:transition-transform hover:text-primary-hover ${isActive || menuActive ? 'text-primary-hover after:scale-x-100' : 'text-ink/75 after:scale-x-0'}`
@@ -127,7 +131,7 @@ export function Header() {
       <button className={`absolute inset-0 bg-ink/55 transition-opacity ${open ? 'opacity-100' : 'opacity-0'}`} onClick={() => setOpen(false)} aria-label="Đóng menu" />
       <aside className={`absolute right-0 top-0 flex h-full w-[min(92vw,30rem)] flex-col overflow-y-auto bg-ink p-6 text-white transition-transform duration-500 ${open ? 'translate-x-0' : 'translate-x-full'}`} aria-label="Menu di động">
         <div className="flex items-center justify-between"><Logo inverse /><button className="focus-ring grid h-11 w-11 place-items-center rounded-full border border-white/20" onClick={() => setOpen(false)} aria-label="Đóng menu"><X /></button></div>
-        <nav className="mt-9 flex flex-col" aria-label="Điều hướng di động">{links.map((link, index) => link.menu ? <details key={link.to} className="group/mobile border-b border-white/12">
+        <nav className="mt-9 flex flex-col" aria-label="Điều hướng di động">{visibleLinks.map((link, index) => link.menu ? <details key={link.to} className="group/mobile border-b border-white/12">
           <summary className={`focus-ring flex cursor-pointer list-none items-center justify-between py-3.5 font-display text-[1.65rem] [&::-webkit-details-marker]:hidden ${(link.menu === 'instruments' && pathname.startsWith('/instruments')) || (link.menu === 'programs' && pathname.startsWith('/programs')) ? 'text-tangerine' : 'text-white'}`}>
             <span>{link.label}</span>
             <span className="grid h-9 w-9 place-items-center rounded-full border border-white/15 text-white transition duration-300 group-open/mobile:border-tangerine/40 group-open/mobile:bg-tangerine/10 group-open/mobile:text-tangerine"><ChevronDown size={18} className="transition-transform duration-300 group-open/mobile:-rotate-180" /></span>
