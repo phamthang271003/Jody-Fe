@@ -1,0 +1,12 @@
+import type { Teacher } from '../types'
+
+export const teachers: Teacher[] = [
+  { slug: 'nguyen-minh-anh', name: 'Nguyễn Minh Anh', role: 'Giảng viên Piano', instruments: ['Piano'], experience: '10+ năm kinh nghiệm', certificate: 'ABRSM Grade 8 · Piano Performance', education: 'Nhạc viện TP. Hồ Chí Minh', image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=85', quote: 'Kỹ thuật là nền móng, nhưng cảm xúc mới là điều ở lại.' },
+  { slug: 'tran-gia-huy', name: 'Trần Gia Huy', role: 'Giảng viên Guitar', instruments: ['Guitar'], experience: '8+ năm biểu diễn & giảng dạy', certificate: 'Rockschool Grade 8', education: 'Berklee Online · Contemporary Guitar', image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85', quote: 'Bài hát bạn yêu luôn là bài tập tốt nhất để bắt đầu.' },
+  { slug: 'le-thao-my', name: 'Lê Thảo My', role: 'Vocal Coach', instruments: ['Vocal'], experience: '9+ năm huấn luyện thanh nhạc', certificate: 'Estill Voice Training Level 2', education: 'Đại học Văn hóa Nghệ thuật Quân đội', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=900&q=85', quote: 'Giọng hát đẹp nhất là giọng hát không cố trở thành ai khác.' },
+  { slug: 'pham-duc-long', name: 'Phạm Đức Long', role: 'Giảng viên Trống', instruments: ['Drums'], experience: '12+ năm sân khấu', certificate: 'Trinity Rock & Pop Grade 8', education: 'Nhạc viện TP. Hồ Chí Minh', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=85', quote: 'Nhịp điệu tốt bắt đầu từ việc biết lắng nghe.' },
+  { slug: 'vo-khanh-linh', name: 'Võ Khánh Linh', role: 'Giảng viên Violin', instruments: ['Violin'], experience: '7+ năm giảng dạy', certificate: 'ABRSM Grade 8 · Violin', education: 'Học viện Âm nhạc Quốc gia Việt Nam', image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85', quote: 'Mỗi nét vĩ là một câu nói, hãy để nó có chủ đích.' },
+  { slug: 'do-quang-minh', name: 'Đỗ Quang Minh', role: 'Music Director', instruments: ['Guitar', 'Band'], experience: '15+ năm sản xuất âm nhạc', certificate: 'Logic Pro Certified Professional', education: 'LASALLE College of the Arts', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=85', quote: 'Chơi cùng người khác là lúc âm nhạc thực sự cất tiếng.' },
+]
+
+export const teacherFilters = ['Tất cả', 'Piano', 'Guitar', 'Vocal', 'Violin', 'Drums']

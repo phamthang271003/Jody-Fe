@@ -1,0 +1,78 @@
+import type { Course } from '../types'
+
+export const courses: Course[] = [
+  {
+    slug: 'piano', name: 'Piano', shortName: 'Piano', category: 'Piano', badge: 'Phổ biến',
+    description: 'Từ những phím đầu tiên đến biểu diễn trọn vẹn tác phẩm bạn yêu.',
+    longDescription: 'Lộ trình piano cân bằng giữa kỹ thuật, cảm âm và niềm vui biểu diễn, được điều chỉnh theo tốc độ riêng của mỗi học viên.',
+    image: 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=1400&q=85',
+    audience: ['Trẻ em', 'Người lớn'], levels: ['Beginner', 'Intermediate', 'Advanced'], age: 'Từ 5 tuổi', format: '1:1 · Nhóm nhỏ', sessions: 12, duration: '45–60 phút', priceFrom: 3200000,
+    outcomes: ['Đọc bản nhạc và ký hiệu chuẩn', 'Phát triển kỹ thuật hai tay', 'Cảm âm, tiết tấu và biểu cảm', 'Hoàn thiện tác phẩm để biểu diễn'],
+    curriculum: ['Nền tảng & tư thế', 'Đọc nhạc và tiết tấu', 'Kỹ thuật & repertoire', 'Biểu diễn & đánh giá'],
+  },
+  {
+    slug: 'guitar-acoustic', name: 'Guitar Acoustic', shortName: 'Guitar', category: 'Guitar', badge: 'Cho người mới',
+    description: 'Đệm hát tự tin, fingerstyle tinh tế và làm chủ cây đàn theo cách của bạn.',
+    longDescription: 'Chương trình guitar thực hành, đưa bạn từ hợp âm nền tảng đến khả năng đệm hát, solo và chơi cùng band.',
+    image: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=1400&q=85',
+    audience: ['Trẻ em', 'Người lớn'], levels: ['Beginner', 'Intermediate'], age: 'Từ 8 tuổi', format: '1:1 · Nhóm nhỏ', sessions: 12, duration: '60 phút', priceFrom: 2800000,
+    outcomes: ['Bấm hợp âm sạch và chuyển hợp âm', 'Đệm hát nhiều phong cách', 'Fingerstyle căn bản', 'Tự xây dựng setlist cá nhân'],
+    curriculum: ['Làm quen nhạc cụ', 'Hợp âm & rhythm', 'Kỹ thuật gảy', 'Biểu diễn hoàn chỉnh'],
+  },
+  {
+    slug: 'thanh-nhac', name: 'Thanh nhạc', shortName: 'Vocal', category: 'Thanh nhạc', badge: 'Hot',
+    description: 'Hiểu giọng hát, làm chủ hơi thở và kể câu chuyện bằng chính thanh âm của bạn.',
+    longDescription: 'Lớp thanh nhạc giúp khám phá màu giọng tự nhiên, xây nền kỹ thuật an toàn và phát triển phong cách trình diễn.',
+    image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1400&q=85',
+    audience: ['Trẻ em', 'Người lớn'], levels: ['Beginner', 'Intermediate', 'Advanced'], age: 'Từ 7 tuổi', format: '1:1 · Nhóm nhỏ', sessions: 12, duration: '60 phút', priceFrom: 3000000,
+    outcomes: ['Hơi thở và khẩu hình đúng', 'Mở rộng quãng giọng an toàn', 'Xử lý ca khúc có chủ đích', 'Tự tin trước sân khấu'],
+    curriculum: ['Khám phá chất giọng', 'Breath & placement', 'Xử lý ca khúc', 'Stage performance'],
+  },
+  {
+    slug: 'violin', name: 'Violin', shortName: 'Violin', category: 'Violin',
+    description: 'Nền tảng cổ điển vững chắc, cảm xúc hiện đại và âm sắc đầy cuốn hút.',
+    longDescription: 'Giáo trình violin chuẩn hóa theo từng độ tuổi, chú trọng tư thế, cao độ và khả năng diễn tấu giàu cảm xúc.',
+    image: 'https://images.unsplash.com/photo-1612225330812-01a9c6b355ec?auto=format&fit=crop&w=1400&q=85',
+    audience: ['Trẻ em', 'Người lớn'], levels: ['Beginner', 'Intermediate', 'Advanced'], age: 'Từ 6 tuổi', format: 'Cá nhân 1:1', sessions: 12, duration: '45–60 phút', priceFrom: 3400000,
+    outcomes: ['Tư thế kéo đàn chuẩn', 'Kiểm soát cao độ và âm sắc', 'Đọc nhạc thành thạo', 'Chơi solo và hòa tấu'],
+    curriculum: ['Tư thế & kéo vĩ', 'Cao độ & nhịp', 'Kỹ thuật ngón', 'Repertoire & recital'],
+  },
+  {
+    slug: 'trong', name: 'Trống', shortName: 'Drums', category: 'Trống', badge: 'Năng lượng',
+    description: 'Giữ nhịp chắc, giải phóng năng lượng và trở thành nhịp tim của ban nhạc.',
+    longDescription: 'Không gian cách âm chuyên biệt và lộ trình thực chiến giúp học viên làm chủ groove, fill và phối hợp band.',
+    image: 'https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=1400&q=85',
+    audience: ['Trẻ em', 'Người lớn'], levels: ['Beginner', 'Intermediate', 'Advanced'], age: 'Từ 7 tuổi', format: 'Cá nhân 1:1', sessions: 12, duration: '60 phút', priceFrom: 3400000,
+    outcomes: ['Tư thế và stick control', 'Đọc drum notation', 'Làm chủ groove phổ biến', 'Chơi cùng backing track/band'],
+    curriculum: ['Stick control', 'Groove foundation', 'Fills & dynamics', 'Band practice'],
+  },
+  {
+    slug: 'guitar-dien', name: 'Guitar điện', shortName: 'Electric', category: 'Guitar', badge: 'Mới',
+    description: 'Từ riff đầu tiên đến solo bùng nổ — tìm ra chất âm mang tên bạn.',
+    longDescription: 'Khám phá guitar điện qua rock, blues và pop với hệ thống amp, pedal và phòng band đầy đủ.',
+    image: 'https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&w=1400&q=85',
+    audience: ['Trẻ em', 'Người lớn'], levels: ['Beginner', 'Intermediate', 'Advanced'], age: 'Từ 10 tuổi', format: '1:1 · Band', sessions: 12, duration: '60 phút', priceFrom: 3200000,
+    outcomes: ['Kỹ thuật pick và fretboard', 'Thiết lập tone cơ bản', 'Improvisation và solo', 'Chơi trong band'],
+    curriculum: ['Electric essentials', 'Riff & rhythm', 'Lead guitar', 'Live band'],
+  },
+  {
+    slug: 'ukulele', name: 'Ukulele', shortName: 'Ukulele', category: 'Khác',
+    description: 'Nhỏ gọn, vui tươi và là cánh cửa dịu dàng để trẻ yêu âm nhạc.',
+    longDescription: 'Khóa nhập môn lý tưởng cho trẻ và người mới, tập trung vào nhịp điệu, hợp âm và niềm vui chơi nhạc.',
+    image: 'https://images.unsplash.com/photo-1558021212-51b6ecfa0db9?auto=format&fit=crop&w=1400&q=85',
+    audience: ['Trẻ em'], levels: ['Beginner'], age: 'Từ 5 tuổi', format: '1:1 · Nhóm nhỏ', sessions: 12, duration: '45 phút', priceFrom: 2400000,
+    outcomes: ['Nhận biết nhịp điệu', 'Hợp âm cơ bản', 'Đệm hát bài yêu thích', 'Chơi nhóm vui vẻ'],
+    curriculum: ['Khám phá âm thanh', 'Hợp âm đầu tiên', 'Đệm hát', 'Mini showcase'],
+  },
+  {
+    slug: 'band', name: 'Ban nhạc', shortName: 'Band', category: 'Khác',
+    description: 'Không chỉ học nhạc — cùng đồng đội tạo nên một màn trình diễn thực thụ.',
+    longDescription: 'Lớp ensemble dành cho học viên đã có nền tảng, phát triển khả năng lắng nghe, phối hợp và làm chủ sân khấu.',
+    image: 'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1400&q=85',
+    audience: ['Trẻ em', 'Người lớn'], levels: ['Intermediate', 'Advanced'], age: 'Từ 10 tuổi', format: 'Nhóm 4–6', sessions: 12, duration: '90 phút', priceFrom: 2600000,
+    outcomes: ['Kỹ năng ensemble', 'Giao tiếp âm nhạc', 'Dàn dựng tiết mục', 'Biểu diễn sân khấu'],
+    curriculum: ['Band matching', 'Song arrangement', 'Rehearsal', 'Live showcase'],
+  },
+]
+
+export const courseCategories = ['Tất cả', 'Piano', 'Guitar', 'Thanh nhạc', 'Violin', 'Trống', 'Khác']

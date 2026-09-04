@@ -1,0 +1,3 @@
+import { ButtonLink } from '../components/common/Button'
+import { useSeo } from '../hooks/useSeo'
+export default function NotFoundPage(){useSeo({title:'Trang không tồn tại',description:'Không tìm thấy trang bạn yêu cầu.'});return <section className="staff-lines grid min-h-screen place-items-center bg-ink px-4 py-28 text-center text-white"><div><p className="font-display text-[10rem] leading-none text-tangerine md:text-[15rem]">404</p><h1 className="display text-5xl md:text-7xl">Nốt nhạc này chưa được viết.</h1><p className="mx-auto mt-6 max-w-md text-white/55">Trang bạn tìm kiếm có thể đã đổi địa chỉ hoặc không còn tồn tại.</p><ButtonLink to="/" variant="secondary" className="mt-9" arrow>Về trang chủ</ButtonLink></div></section>}
