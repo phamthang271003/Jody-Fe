@@ -38,7 +38,8 @@ export function CertificateSection() {
                 <div>
                   <p className="text-[.52rem] font-semibold uppercase tracking-[.16em] text-ink/45 sm:text-xs">Trân trọng trao</p>
                   <h3 className="mt-1.5 font-display text-xl font-semibold tracking-[-.03em] text-ink sm:mt-2 sm:text-4xl">Chứng nhận hoàn thành</h3>
-                  <p className="mt-1 font-display text-lg italic text-[#9a7133] sm:mt-2 sm:text-3xl">Nguyễn Minh Khôi</p>
+                  <p className="mt-1 font-display text-lg italic text-[#9a7133] sm:mt-2 sm:text-3xl">Nguyễn Minh Hoàng</p>
+                  <p className="mt-0.5 text-[.44rem] font-semibold uppercase tracking-[.12em] text-ink/45 sm:mt-1 sm:text-[.65rem]">28 tuổi</p>
                   <p className="mx-auto mt-1.5 max-w-sm text-[.46rem] leading-3 text-ink/55 sm:mt-3 sm:text-[.7rem] sm:leading-5">Đã hoàn thành khóa học</p>
                   <p className="text-[.55rem] font-bold text-ink sm:text-sm">Piano Foundation · 24 buổi</p>
                 </div>

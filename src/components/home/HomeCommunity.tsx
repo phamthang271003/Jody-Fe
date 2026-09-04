@@ -33,7 +33,7 @@ export function FAQSection() {
         <p className="mx-auto mt-6 max-w-3xl text-sm leading-7 text-ink/55 sm:text-base">Bạn còn băn khoăn về khóa học, lịch học, hình thức đăng ký hay cách chọn nhạc cụ phù hợp? Dưới đây là những câu hỏi phổ biến nhất.</p>
       </header>
       <FAQAccordion items={faqs} variant="showcase" />
-      <p className="mt-8 text-center text-sm text-ink/50">Chưa tìm thấy câu trả lời? Gọi <a className="focus-ring font-semibold text-iris underline decoration-iris/30 underline-offset-4" href="tel:02873008886">(028) 7300 8886</a> để được tư vấn.</p>
+      <p className="mt-8 text-center text-sm text-ink/50">Chưa tìm thấy câu trả lời? Gọi <a className="focus-ring font-semibold text-iris underline decoration-iris/30 underline-offset-4" href="tel:0938793558">0938 793 558</a> để được tư vấn.</p>
     </div>
   </section>
 }

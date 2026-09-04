@@ -19,8 +19,8 @@ import { Button } from '../components/common/Button'
 import { courses } from '../data/courses'
 import { useSeo } from '../hooks/useSeo'
 
-const mapUrl = 'https://www.google.com/maps?q=32A%20Tr%E1%BA%A7n%20Qu%E1%BB%91c%20Th%E1%BA%A3o%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh&output=embed'
-const directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=32A%20Tr%E1%BA%A7n%20Qu%E1%BB%91c%20Th%E1%BA%A3o%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh'
+const mapUrl = 'https://www.google.com/maps?q=7%2F41%2F20%20Th%C3%A0nh%20Th%C3%A1i%2C%20Ph%C6%B0%E1%BB%9Dng%20Di%C3%AAn%20H%E1%BB%93ng%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vi%E1%BB%87t%20Nam&z=18&output=embed'
+const directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=7%2F41%2F20%20Th%C3%A0nh%20Th%C3%A1i%2C%20Ph%C6%B0%E1%BB%9Dng%20Di%C3%AAn%20H%E1%BB%93ng%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vi%E1%BB%87t%20Nam'
 
 const serviceNotes = [
   {
@@ -41,11 +41,11 @@ const serviceNotes = [
 ]
 
 const contactItems = [
-  { icon: Phone, label: '(028) 7300 8886', href: 'tel:02873008886' },
-  { icon: MessageCircle, label: 'Zalo: 0909 123 456', href: 'https://zalo.me/0909123456' },
-  { icon: Mail, label: 'hello@jodymusic.vn', href: 'mailto:hello@jodymusic.vn' },
+  { icon: Phone, label: '0938 793 558', href: 'tel:0938793558' },
+  { icon: MessageCircle, label: 'Zalo: 0938 793 558', href: 'https://zalo.me/0938793558' },
+  { icon: Mail, label: 'jodymusiccenter@gmail.com', href: 'mailto:jodymusiccenter@gmail.com' },
   { icon: Facebook, label: 'Jody Music', href: '#' },
-  { icon: MapPin, label: '32A Trần Quốc Thảo, P. Xuân Hòa, TP.HCM', href: directionsUrl },
+  { icon: MapPin, label: '7/41/20 Thành Thái, Phường Diên Hồng', href: directionsUrl },
 ]
 
 export default function ContactPage() {

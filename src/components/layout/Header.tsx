@@ -63,9 +63,9 @@ export function Header() {
       <div className="bg-ink text-white">
         <div className={`${headerContainer} flex h-8 items-center justify-between gap-4 text-[.61rem] font-medium text-white/78 sm:h-9`}>
           <div className="flex min-w-0 items-center gap-5">
-            <a href="https://maps.google.com" target="_blank" rel="noreferrer" className="focus-ring hidden items-center gap-2 transition hover:text-tangerine lg:flex"><MapPin size={13} className="text-tangerine" />32A Trần Quốc Thảo, TP.HCM</a>
-            <a href="tel:02873008886" className="focus-ring flex shrink-0 items-center gap-2 transition hover:text-tangerine"><Phone size={13} className="text-tangerine" />(028) 7300 8886</a>
-            <a href="mailto:hello@jodymusic.vn" className="focus-ring hidden items-center gap-2 transition hover:text-tangerine md:flex"><Mail size={13} className="text-tangerine" />hello@jodymusic.vn</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=7%2F41%2F20%20Th%C3%A0nh%20Th%C3%A1i%2C%20Ph%C6%B0%E1%BB%9Dng%20Di%C3%AAn%20H%E1%BB%93ng%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vi%E1%BB%87t%20Nam" target="_blank" rel="noreferrer" className="focus-ring hidden items-center gap-2 transition hover:text-tangerine lg:flex"><MapPin size={13} className="text-tangerine" />7/41/20 Thành Thái, Phường Diên Hồng</a>
+            <a href="tel:0938793558" className="focus-ring flex shrink-0 items-center gap-2 transition hover:text-tangerine"><Phone size={13} className="text-tangerine" />0938 793 558</a>
+            <a href="mailto:jodymusiccenter@gmail.com" className="focus-ring hidden items-center gap-2 transition hover:text-tangerine md:flex"><Mail size={13} className="text-tangerine" />jodymusiccenter@gmail.com</a>
           </div>
           <div className="flex shrink-0 items-center gap-3">
             <span className="flex items-center gap-2"><Clock3 size={13} className="text-tangerine" /><span className="hidden sm:inline">08:00–21:30 · </span>Thứ 2–CN</span>
@@ -120,7 +120,7 @@ export function Header() {
             <Link to="/login" className="button-motion focus-ring hidden min-h-12 items-center gap-2 rounded-full border border-border bg-white/50 px-5 text-xs font-semibold text-ink hover:border-primary-hover hover:text-primary-hover lg:inline-flex"><LogIn size={17} className="text-iris" />Đăng nhập</Link>
             <button onClick={() => openBooking()} className="button-motion button-shine focus-ring hidden min-h-12 items-center gap-2 rounded-full bg-primary px-6 text-xs font-semibold text-ink shadow-[0_8px_24px_rgba(217,151,24,.18)] hover:bg-primary-hover lg:inline-flex">Đăng ký học thử <ArrowUpRight className="button-arrow" size={16} /></button>
             <Link to="/login" className="focus-ring hidden h-11 w-11 place-items-center rounded-full border border-ink/15 text-ink sm:grid lg:hidden" aria-label="Đăng nhập"><LogIn size={18} /></Link>
-            <button onClick={() => openBooking()} className="button-motion button-shine focus-ring min-h-10 rounded-full bg-primary px-3.5 text-[.68rem] font-semibold text-ink hover:bg-primary-hover lg:hidden sm:px-5">Học thử</button>
+            <button onClick={() => openBooking()} className="button-motion button-shine focus-ring min-h-10 rounded-full bg-primary px-3.5 text-[.68rem] font-semibold text-ink hover:bg-primary-hover lg:hidden sm:px-5">Đăng ký</button>
             <button onClick={() => setOpen(true)} className="focus-ring grid h-11 w-11 place-items-center rounded-full border border-ink/15 xl:hidden" aria-label="Mở menu"><Menu size={21} /></button>
           </div>
         </div>
@@ -159,7 +159,7 @@ export function Header() {
           <Link to="/login" className="focus-ring flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/20 text-sm font-semibold transition hover:bg-white hover:text-ink"><LogIn size={18} />Đăng nhập học viên</Link>
           <button onClick={() => { setOpen(false); openBooking() }} className="button-motion button-shine focus-ring flex min-h-12 items-center justify-center gap-2 rounded-full bg-primary text-sm font-semibold text-ink hover:bg-primary-hover">Đăng ký học thử <ArrowUpRight className="button-arrow" size={17} /></button>
         </div>
-        <div className="mt-7 border-t border-white/12 pt-6 text-xs leading-6 text-white/45"><p className="flex items-center gap-2"><Music2 size={14} className="text-tangerine" />32A Trần Quốc Thảo, TP.HCM</p><a href="tel:02873008886" className="focus-ring mt-1 block text-tangerine">(028) 7300 8886</a></div>
+        <div className="mt-7 border-t border-white/12 pt-6 text-xs leading-6 text-white/45"><p className="flex items-center gap-2"><Music2 size={14} className="text-tangerine" />7/41/20 Thành Thái, Phường Diên Hồng</p><a href="tel:0938793558" className="focus-ring mt-1 block text-tangerine">0938 793 558</a></div>
       </aside>
     </div>
   </>

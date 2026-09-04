@@ -123,9 +123,9 @@ export function Footer() {
         <div className="hidden md:block">
           <h2 className="mb-6 flex items-center gap-2 text-[.68rem] font-bold uppercase tracking-[.06em] text-white"><span className="h-1.5 w-1.5 rounded-full bg-primary" />Liên hệ</h2>
           <address className="space-y-5 text-xs not-italic leading-6 text-white/62">
-            <p className="flex items-start gap-3"><MapPin size={17} className="mt-1 shrink-0 text-white/80" />32A Trần Quốc Thảo,<br />P. Xuân Hòa, TP.HCM</p>
-            <a href="tel:02873008886" className="focus-ring flex items-center gap-3 transition hover:text-tangerine"><Phone size={17} className="shrink-0 text-white/80" />(028) 7300 8886</a>
-            <a href="mailto:hello@jodymusic.vn" className="focus-ring flex items-center gap-3 transition hover:text-tangerine"><Mail size={17} className="shrink-0 text-white/80" />hello@jodymusic.vn</a>
+            <p className="flex items-start gap-3"><MapPin size={17} className="mt-1 shrink-0 text-white/80" />7/41/20 Thành Thái,<br />Phường Diên Hồng</p>
+            <a href="tel:0938793558" className="focus-ring flex items-center gap-3 transition hover:text-tangerine"><Phone size={17} className="shrink-0 text-white/80" />0938 793 558</a>
+            <a href="mailto:jodymusiccenter@gmail.com" className="focus-ring flex items-center gap-3 transition hover:text-tangerine"><Mail size={17} className="shrink-0 text-white/80" />jodymusiccenter@gmail.com</a>
             <p className="flex items-start gap-3"><Clock3 size={17} className="mt-1 shrink-0 text-white/80" />08:00–21:30<br />Thứ 2–Chủ nhật</p>
           </address>
         </div>
@@ -133,9 +133,9 @@ export function Footer() {
         <div className="rounded-2xl border border-white/10 bg-white/[.035] p-5 md:hidden">
           <h2 className="flex items-center gap-2 text-[.68rem] font-bold uppercase tracking-[.06em] text-white"><span className="h-1.5 w-1.5 rounded-full bg-primary" />Liên hệ trung tâm</h2>
           <address className="mt-5 grid gap-4 text-[.72rem] not-italic leading-5 text-white/62">
-            <p className="flex items-start gap-3"><MapPin size={17} className="mt-0.5 shrink-0 text-tangerine" />32A Trần Quốc Thảo,<br />P. Xuân Hòa, TP.HCM</p>
-            <a href="tel:02873008886" className="focus-ring flex items-center gap-3"><Phone size={17} className="shrink-0 text-tangerine" />(028) 7300 8886</a>
-            <a href="mailto:hello@jodymusic.vn" className="focus-ring flex items-center gap-3 break-all"><Mail size={17} className="shrink-0 text-tangerine" />hello@jodymusic.vn</a>
+            <p className="flex items-start gap-3"><MapPin size={17} className="mt-0.5 shrink-0 text-tangerine" />7/41/20 Thành Thái,<br />Phường Diên Hồng</p>
+            <a href="tel:0938793558" className="focus-ring flex items-center gap-3"><Phone size={17} className="shrink-0 text-tangerine" />0938 793 558</a>
+            <a href="mailto:jodymusiccenter@gmail.com" className="focus-ring flex items-center gap-3 break-all"><Mail size={17} className="shrink-0 text-tangerine" />jodymusiccenter@gmail.com</a>
             <p className="flex items-start gap-3"><Clock3 size={17} className="mt-0.5 shrink-0 text-tangerine" />08:00–21:30 · Thứ 2–Chủ nhật</p>
           </address>
         </div>
