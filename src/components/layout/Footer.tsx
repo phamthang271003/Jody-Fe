@@ -20,8 +20,8 @@ const columns = [
   {
     title: 'Chương trình học',
     links: [
-      ['Học tại trung tâm', '/courses'],
-      ['Gia sư âm nhạc', '/courses'],
+      ['Học tại trung tâm', '/programs/hoc-tai-trung-tam'],
+      ['Gia sư âm nhạc', '/programs/hoc-tai-trung-tam'],
       ['Hợp tác trường học', '/contact'],
       ['Tài liệu học tập', '/blog'],
       ['Kiểm tra trình độ', '/contact'],
