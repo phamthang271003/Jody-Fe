@@ -7,6 +7,7 @@
   --color-mist: #e9e2d7;
   --color-primary: #f4b942;
   --color-primary-hover: #d99718;
+  --color-primary-readable: color-mix(in srgb, var(--color-primary-hover) 65%, var(--color-ink));
   --color-soft-yellow: #fff1c7;
   --color-cream-soft: #fff8e7;
   --color-muted: #667085;
@@ -70,6 +71,52 @@ img { display: block; }
 .card-lift { transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; }
 .card-lift:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgb(16 24 47 / .12); }
 
+.instrument-card { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+.instrument-card-image { transition: transform .45s cubic-bezier(.2,.7,.2,1); }
+.instrument-card:focus-within { border-color: var(--color-primary-hover); }
+@media (width < 40rem) {
+  .instrument-catalog h1 { overflow-wrap: break-word; line-height: 1.2; }
+  .instrument-catalog nav[aria-label="Breadcrumb"] { gap: 0 .375rem; text-transform: none; letter-spacing: 0; line-height: 1.6; }
+  .instrument-catalog nav[aria-label="Breadcrumb"] > span { min-width: 0; max-width: 100%; }
+  .instrument-catalog nav[aria-label="Breadcrumb"] svg { flex-shrink: 0; }
+  .instrument-catalog nav[aria-label="Breadcrumb"] a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+  .instrument-catalog .button-motion { font-size: .875rem; font-weight: 600; line-height: 1.5; }
+  .instrument-purchase-benefits > li { flex-direction: column; align-items: flex-start; gap: .5rem; padding: 1rem .625rem; }
+  .instrument-purchase-benefits > li:nth-child(odd) { padding-left: 0; }
+  .instrument-purchase-benefits > li:nth-child(even) { padding-right: 0; border-left: 1px solid var(--color-border); }
+  .instrument-purchase-benefits > li:nth-child(n + 3) { border-top: 1px solid var(--color-border); }
+  .instrument-purchase-benefits > li > svg { width: 1.5rem; height: 1.5rem; }
+  .instrument-purchase-benefits p { line-height: 1.6; }
+  .instrument-filters [role="combobox"] { min-height: 3.5rem; gap: .5rem; padding: .5rem .625rem; border-radius: 1rem; font-size: .875rem; line-height: 1.4; }
+  .instrument-filters .instrument-filter-menu { width: min(19rem, calc(100vw - 2rem)); }
+  .instrument-filters > :nth-child(even) .instrument-filter-menu { right: 0; left: auto; }
+  .instrument-catalog .instrument-card { padding: .5rem; border-radius: 1rem; }
+  .instrument-catalog .instrument-card-badge { padding: .25rem .5rem; font-size: .5625rem; line-height: 1rem; }
+  .instrument-catalog .instrument-card-media { min-height: 7rem; }
+  .instrument-catalog .instrument-card-info { margin-top: .75rem; }
+  .instrument-catalog .instrument-card-title { font-size: 1rem; line-height: 1.3; }
+  .instrument-catalog .instrument-card-price { margin-top: auto; padding-top: .75rem; font-size: 1rem; line-height: 1.5; }
+  .instrument-catalog .instrument-card-actions { width: 100%; margin-top: .5rem; gap: .5rem; }
+  .instrument-catalog .instrument-card-details[open] summary > svg { transform: rotate(180deg); }
+  .instrument-catalog .instrument-card-details[open] summary { margin-bottom: .5rem; }
+  .instrument-catalog .instrument-card-benefits { padding: .5rem; border-radius: .75rem; }
+  .instrument-catalog .instrument-card-benefits p,
+  .instrument-catalog .instrument-card-benefits li { gap: .375rem; }
+  .instrument-catalog .instrument-card-benefits p > svg { width: 1rem; height: 1rem; }
+  .instrument-catalog .instrument-card-benefits li > span:first-child { width: 1rem; height: 1rem; margin-top: .25rem; }
+  .instrument-catalog .instrument-card-benefits li > span:first-child svg { width: .75rem; height: .75rem; }
+  .instrument-catalog .instrument-card .instrument-card-cta { min-height: 3rem; gap: .25rem; padding: .5rem .375rem; font-size: .875rem; line-height: 1.5; }
+  .instrument-catalog .instrument-card-cta > svg { width: .75rem; height: .75rem; }
+}
+.instrument-filter-menu { animation: instrument-filter-enter .18s ease-out; }
+.instrument-categories .category-filter { font-size: .875rem; font-weight: 600; line-height: 1.5; }
+.instrument-categories .category-explore { font-size: .875rem; font-weight: 500; line-height: 1.6; }
+@keyframes instrument-filter-enter { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: none; } }
+@media (hover: hover) and (pointer: fine) {
+  .instrument-card:hover { transform: translateY(-5px); border-color: var(--color-primary-hover); box-shadow: 0 16px 36px rgb(16 24 47 / .09); }
+  .instrument-card:hover .instrument-card-image { transform: scale(1.045); }
+}
+
 @keyframes fade-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
 @keyframes wave { 0%,100% { transform: scaleY(.35); } 50% { transform: scaleY(1); } }
 @keyframes spin-slow { to { transform: rotate(360deg); } }
@@ -84,5 +131,6 @@ img { display: block; }
 .contact-float-icon { animation: contact-pulse 2.8s ease-out infinite; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .instrument-card:hover, .instrument-card:hover .instrument-card-image { transform: none; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }

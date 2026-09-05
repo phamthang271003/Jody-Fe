@@ -26,7 +26,7 @@ const programLinks = [
 
 const links = [
   { label: 'Chương trình', to: programLinks[0].to, menu: 'programs' },
-  { label: 'Nhạc cụ', to: '/instruments', menu: 'instruments' },
+  { label: 'Nhạc cụ', to: '/instruments/categories', menu: 'instruments' },
   { label: 'Giáo viên', to: '/teachers' },
   { label: 'Học phí', to: '/pricing' },
   { label: 'Giới thiệu', to: '/about' },
@@ -152,7 +152,7 @@ export function Header() {
                     {category.label}
                   </Link>
                 ))}
-                <Link to="/instruments" onClick={(event) => { setDesktopMenu(null); event.currentTarget.blur() }} className="focus-ring mt-1 block border-t border-border px-4 pb-2 pt-3 text-[.76rem] font-bold text-primary-hover transition hover:text-ink">
+                <Link to="/instruments/categories" onClick={(event) => { setDesktopMenu(null); event.currentTarget.blur() }} className="focus-ring mt-1 block border-t border-border px-4 pb-2 pt-3 text-[.76rem] font-bold text-primary-hover transition hover:text-ink">
                   Xem tất cả danh mục
                 </Link>
               </div>}
@@ -230,7 +230,7 @@ export function Header() {
                           {category.label}
                         </Link>
                       ))}
-                      <Link to="/instruments" className={`focus-ring mt-1 flex min-h-11 items-center border-t border-white/10 px-3.5 py-2 text-sm font-semibold leading-6 transition-colors ${pathname === '/instruments' && !activeInstrumentCategory ? 'text-primary' : 'text-primary/80 hover:text-primary'}`}>Xem tất cả danh mục</Link>
+                      <Link to="/instruments/categories" className={`focus-ring mt-1 flex min-h-11 items-center border-t border-white/10 px-3.5 py-2 text-sm font-semibold leading-6 transition-colors ${pathname === '/instruments/categories' ? 'text-primary' : 'text-primary/80 hover:text-primary'}`}>Xem tất cả danh mục</Link>
                     </div>
                   ))}
                 </div>
